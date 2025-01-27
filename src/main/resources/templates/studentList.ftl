@@ -8,6 +8,44 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background: linear-gradient(45deg, #6a11cb, #2575fc);
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            padding-bottom: 35px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            min-height: 500px; 
+        }
+        
+        h3, h1 {
+            color: #000;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn {
+            transition: transform 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        .table th {
+            background-color: #4e73df;
+            color: white;
+        }
+
+        .action-column {
+            width: 200px; /* Set a smaller width for the action column */
+            text-align: center; /* Optionally center the buttons */
+        }
+    </style>
 </head>
 
 <body>
@@ -49,7 +87,7 @@
                                     <td>${student.id}</td>
                                     <td>${student.name}</td>
                                     <td>${student.age}</td>
-                                    <td>
+                                    <td class="action-column">
                                         <button type="button" class="btn btn-warning btn-sm edit-btn"
                                                 data-id="${student.id}"
                                                 data-name="${student.name}"
