@@ -13,7 +13,6 @@
             background: linear-gradient(45deg, #6a11cb, #2575fc);
             font-family: 'Arial', sans-serif;
         }
-
         .container {
             background-color: rgba(255, 255, 255, 0.9);
             padding: 30px;
@@ -22,25 +21,20 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             min-height: 500px; 
         }
-        
         h3, h1 {
             color: #000;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
-
         .btn {
             transition: transform 0.3s ease;
         }
-
         .btn:hover {
             transform: scale(1.05);
         }
-
         .table th {
             background-color: #4e73df;
             color: white;
         }
-
         .action-column {
             width: 200px; /* Set a smaller width for the action column */
             text-align: center; /* Optionally center the buttons */
