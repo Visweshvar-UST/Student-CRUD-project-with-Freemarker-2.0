@@ -56,7 +56,6 @@ public class StudentViewController {
     //     }
     // }
     
-
     @PutMapping("/students/{id}")
     public ResponseEntity<Student> updateStudent(@PathVariable("id") Long id, @RequestBody Student updatedStudent) {
         Student student = studentService.updateStudent(id, updatedStudent);
